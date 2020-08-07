@@ -1,4 +1,9 @@
-class config:
+
+class game_ctx:
+    FPSCLOCK = None
+    DISPLAY_SURF = None
+
+#config
     FPS = 30
     WINDOW_WIDTH = 640
     WINDOW_HEIGHT = 480
@@ -6,12 +11,22 @@ class config:
     BOX_SIZE = 40
     GAP_SIZE = 10
     BOARD_WIDTH = 10
-    BOARD_HEIGHT = 7
+    BOARD_HEIGHT = 7 
     
-    X_MARGIN = int((WINDOW_WIDTH - (BOARD_WIDTH*(BOX_SIZE+GAP_SIZE)))/2)
+    X_MARGIN = 10#int((WINDOW_WIDTH - (BOARD_WIDTH*(BOX_SIZE+GAP_SIZE)))/2)
     Y_MARGIN = int((WINDOW_HEIGHT - (BOARD_HEIGHT*(BOX_SIZE+GAP_SIZE)))/2)
 
-class color:
+
+    #shape
+    DONUT = 'donut'
+    SQUARE = 'square'
+    DIAMOND = 'diamond'
+    LINES = 'lines'
+    OVAL = 'oval'
+    
+    ALL_SHAPES = (DONUT, SQUARE, DIAMOND, LINES, OVAL)
+
+    #color 
     GRAY = (100, 100, 100)
     NAVYBLUE = (60, 60, 100)
     WHITE = (255, 255, 255)
@@ -28,20 +43,13 @@ class color:
     BOX_COLOR = WHITE
     HIGHLIGHT_COLOR = BLUE
 
-    ALL_COLORS = (color.RED, color.GREEN ,color.BLUE, color.YELLOW, color.ORANGE, color.PURPLE, color.CYAN)
+    ALL_COLORS = (RED, GREEN ,BLUE, YELLOW, ORANGE, PURPLE, CYAN)
 
-class shape:
-    DONUT = 'donut'
-    SQUARE = 'square'
-    DIAMOND = 'diamond'
-    LINES = 'lines'
-    OVAL = 'oval'
-    
-    ALL_SHAPES = (DONUT, SQUARE, DIAMOND, LINES, OVAL)
+    REVEALED_BOX=None
+    MAIN_BOARD=None
 
-def good():
-    assert (config.BOARD_WIDTH*config.BOARD_HEIGHT)%2==0, 'BOARD NEED TO HAVE AN EVEN NUM OF BOXES FOR PAIR OF MATCHES'
-    assert len(color.ALL_COLORS)*len(shape.ALL_SHAPES)*2 >= config.BOARD_WIDTH*config.BOARD_HEIGHT,
-    'Board is too big for # of shapes/colors defined'
-    
-
+    MOUSE_X=0
+    MOUSE_Y=0
+    FIRST_SELECTION=None
+    # MOUSE_ON_BOX=set()
+    # MOUSE_ON_BOX_SIZE=5
