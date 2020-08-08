@@ -1,0 +1,31 @@
+pip install sphinx
+sphinx-quickstart
+
+update conf.py
+
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../..'))
+sys.path.insert(0, os.path.abspath('../../sample_module'))
+html_theme = 'classic'
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.coverage', 'sphinx.ext.napoleon']
+
+sphinx-apidoc -f -o source/ ../{module_name}/
+#sphinx-apidoc -f -o source/ ../sample_module
+
+
+Edit index.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   modules
+
+
+make html
+#make clean
+
+github page-> branch -> docs -> save
+
+https://htmlpreview.github.io/?{your_github_url}/master/docs/html/genindex.html
