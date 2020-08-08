@@ -1,4 +1,5 @@
 """
+	leanring notes from inventwithpython
     pygame functions used:
 
 -draw text on screen

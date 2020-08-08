@@ -1,4 +1,6 @@
 """
+leanring notes from inventwithpython
+
 --shuffle array	
 random.shuffle
 
