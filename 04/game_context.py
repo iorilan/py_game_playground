@@ -26,7 +26,7 @@ class ctx:
     BUTTONTEXTCOLOR = BLACK
     MESSAGECOLOR = WHITE
 
-    XMARGIN = 10#int((WINDOWWIDTH - (TILESIZE * BOARDWIDTH + (BOARDWIDTH - 1))) / 2)
+    XMARGIN = 10 #int((WINDOWWIDTH - (TILESIZE * BOARDWIDTH + (BOARDWIDTH - 1))) / 2)
     YMARGIN = int((WINDOWHEIGHT - (TILESIZE * BOARDHEIGHT + (BOARDHEIGHT - 1))) / 2)
 
     UP = 'up'
@@ -43,14 +43,18 @@ class ctx:
     NEW_RECT= None
     SOLVE_SURF= None 
     SOLVE_RECT= None
+    STEP_SURF=None
+    STEP_RECT=None
+    STEP_TOTAL=0
 
     MAIN_BOARD = None
     SOLUTION_SEQ = None
     SOLVEDBOARD = None
 
     ALL_MOVES = []
-
     SLIDE_TO = None
 
-
     TOTAL_NUMBER = 30
+    SLIDE_SPEED=20
+
+    TEXT_DISPLAY=''
