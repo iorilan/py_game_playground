@@ -1,3 +1,25 @@
+"""
+-create screen with color
+screen = pygame.display.set_mode([w,h])
+screen.fill((0,255,255))
+
+-event loop
+for e in pygame.event.get()
+
+-pressed keys array
+pygame.key.get_pressed()
+
+
+-create surface rect 
+surf = pygame.Surface((75,75))
+surf.fill((255,255,255))
+screen.blit(surf, surf.get_rect())
+
+-refresh screen
+pygame.display.flip()
+
+"""
+
 import pygame
 
 from pygame.locals import(
