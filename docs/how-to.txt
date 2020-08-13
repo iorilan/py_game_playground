@@ -1,17 +1,23 @@
 pip install sphinx
 sphinx-quickstart
 
-update conf.py
-
+update conf.py :
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../..'))
+
+#make sure your modules can be found 
 sys.path.insert(0, os.path.abspath('../../sample_module'))
+
 html_theme = 'classic'
+#all themes : https://sphinx-themes.org/
+
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.coverage', 'sphinx.ext.napoleon']
 
+-to generate modules.rst based on module path
 sphinx-apidoc -f -o source/ ../{module_name}/
 #sphinx-apidoc -f -o source/ ../sample_module
+
+after generated make sure your module(e.g. main) included in modules.rst
 
 
 Edit index.rst
@@ -24,8 +30,11 @@ Edit index.rst
 
 
 make html
-#make clean
+#make clean (if want to remove things in build folder )
 
+config on github:
 github page-> branch -> docs -> save
 
-https://htmlpreview.github.io/?{your_github_url}/master/docs/html/genindex.html
+preview your doc :
+https://htmlpreview.github.io/?{your_github_url_of_docs}
+#https://htmlpreview.github.io/?https://github.com/iorilan/py_game_playground/blob/master/docs/html/index.html
