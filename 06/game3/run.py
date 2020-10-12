@@ -1,3 +1,6 @@
+
+#TODO ball out of screen (top)
+#score
 import pygame, sys
 from pygame.locals import *
 from vars import color, game_ctx, bar,ball, brick_mat
