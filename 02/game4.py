@@ -1,3 +1,6 @@
+"""
+move word on screen
+"""
 import pygame, sys
 from pygame.locals import *
 

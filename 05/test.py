@@ -1,4 +1,6 @@
 """
+test draw part of image 
+
 draw part (x,y,width,height) of image on screen (x1,y1)
 """
 

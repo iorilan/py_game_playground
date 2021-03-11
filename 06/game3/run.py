@@ -1,3 +1,7 @@
+"""
+bar + bouncing ball + rects
+"""
+
 
 #TODO ball out of screen (top)
 #score

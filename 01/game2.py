@@ -1,4 +1,7 @@
 """
+update screen test
+
+
 -create screen with color
 screen = pygame.display.set_mode([w,h])
 screen.fill((0,255,255))

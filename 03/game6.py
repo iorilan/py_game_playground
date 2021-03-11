@@ -1,4 +1,8 @@
 '''
+    draw ship + move + shoot
+    draw enemies blocks 
+
+
     to draw image on [x,y]
         sprite.image.x,sprite.image.y = [100,100]
         rect.x equals rect.left

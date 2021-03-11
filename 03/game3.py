@@ -1,4 +1,6 @@
 '''
+    draw a ship image
+
     for pygame.image.load
     call screen.blit(image, rect) to 'refresh' display in screen
 '''

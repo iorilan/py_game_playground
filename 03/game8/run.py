@@ -1,4 +1,7 @@
 """
+    complete space ship game
+    score + life count 
+
     settings
     load sprites(group)
     event context

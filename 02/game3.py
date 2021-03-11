@@ -1,3 +1,7 @@
+"""
+move a cat image on screen
+"""
+
 import pygame, sys
 from pygame.locals import *
 

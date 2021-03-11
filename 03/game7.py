@@ -1,4 +1,8 @@
 '''
+    move enemy
+    bullet and enemy collide 
+
+
     group to group collide:
         collisions = pygame.sprite.groupcollide(group_1, group_2, True, True)
     obj to group collide:

@@ -1,3 +1,7 @@
+"""
+    sworm game
+"""
+
 #Next can not eat own tail
 #score
 #eat food bug (tail reducing)

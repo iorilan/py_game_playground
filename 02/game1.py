@@ -1,3 +1,6 @@
+"""
+event loop test
+"""
 import pygame, sys
 from pygame.locals import *
 

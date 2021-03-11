@@ -1,3 +1,8 @@
+"""
+draw bar+bouncing ball
+"""
+
+
 import pygame, sys
 from pygame.locals import *
 

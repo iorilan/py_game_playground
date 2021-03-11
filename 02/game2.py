@@ -1,3 +1,8 @@
+"""
+draw shapes test
+"""
+
+
 import pygame, sys
 from pygame.locals import *
 

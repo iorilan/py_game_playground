@@ -1,4 +1,6 @@
 '''
+    draw ship + move + shoot 
+
     (Sprite) Group :
         sprites - get all sprite element to loop through
         add - 

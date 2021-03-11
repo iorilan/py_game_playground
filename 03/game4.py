@@ -1,4 +1,6 @@
 '''
+    draw ship + move
+
     blit image in screen
     keyboard event handling to move image left right
 '''

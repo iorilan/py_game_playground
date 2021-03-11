@@ -1,3 +1,8 @@
+"""
+mock up of plane game 2
+replace color rect with image 
+"""
+
 import pygame
 import random
 from pygame.locals import(
